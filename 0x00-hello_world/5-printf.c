@@ -1,6 +1,10 @@
 #include <stdio.h>
 
-/* Use printf */
+/**
+ * main - Use of command printf
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 
