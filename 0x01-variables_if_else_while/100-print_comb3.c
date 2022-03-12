@@ -21,8 +21,11 @@ if (tens < unit)
 {
 putchar(tens + '0');
 putchar(unit + '0');
+if (number < 89)
+{
 putchar(',');
 putchar(' ');
+}
 }
 }
 putchar('\n');
