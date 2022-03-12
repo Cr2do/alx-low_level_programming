@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - Print numbers
+ * main - Print all possible different combinations of two digits
  *
  * Return: Always 0 (Success)
  */
@@ -10,18 +10,20 @@ int main(void)
 {
 int number;
 
-for (number = 0; number < 90; number++)
+int tens;
+int unit;
+
+for (number = 1; number < 90; number++)
 {
-if (number <= 9)
+tens = number / 10;
+unit = number % 10;
+if (tens < unit)
 {
-putchar('0');
-}
-if (number != 10)
-{
-putchar(number + '0');
-}
+putchar(tens + '0');
+putchar(unit + '0');
 putchar(',');
 putchar(' ');
+}
 }
 putchar('\n');
 
