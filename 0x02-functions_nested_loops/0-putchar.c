@@ -8,17 +8,14 @@
  */
 int main(void)
 {
-char nm[12] = "_putchar\n";
-_putchar(nm[0]);
-_putchar(nm[1]);
-_putchar(nm[2]);
-_putchar(nm[3]);
-_putchar(nm[4]);
-_putchar(nm[5]);
-_putchar(nm[6]);
-_putchar(nm[7]);
-_putchar(nm[8]);
-_putchar(nm[9]+nm[10]);
-
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+_putchar('\n');
 return (0);
 }
