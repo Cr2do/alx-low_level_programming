@@ -1,17 +1,19 @@
 #include "main.h"
 
 /**
+ * _isupper -  upper checker
  *
- * @param c
- * @return
+ * @c: integer parameter c
+ *
+ * Return: returns value
  */
 int _isupper(int c)
 {
-if (c < 61)
+if ('A' < c && 'Z' < c)
 {
 return (0);
 }
-else
+else if ('a' < c && 'z' < c)
 {
 return (1);
 }
