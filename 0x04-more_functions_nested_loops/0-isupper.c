@@ -1,14 +1,13 @@
 #include "main.h"
 
 /**
- * _isupper
  *
- * Return: returns 0
+ * @param c
+ * @return
  */
-
-int _isupper(char c)
+int _isupper(int c)
 {
-if (isupper(c))
+if (c < 61)
 {
 return (0);
 }
