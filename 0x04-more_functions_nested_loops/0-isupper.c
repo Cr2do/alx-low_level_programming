@@ -14,7 +14,7 @@ if ('A' <= c &&  c <= 'Z')
 {
 value = 1;
 }
-else if ('a' <= c && c <= 'z')
+else
 {
 value = 0;
 }
