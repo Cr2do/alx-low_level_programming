@@ -10,11 +10,11 @@
 int _isupper(int c)
 {
 int value;
-if ('A' <= c && 'Z' <= c)
+if ('A' <= c &&  c <= 'Z')
 {
 value = 0;
 }
-else if ('a' <= c && 'z' <= c)
+else if ('a' <= c && c <= 'z')
 {
 value = 1;
 }
