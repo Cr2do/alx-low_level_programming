@@ -6,9 +6,12 @@
  */
 void reset_to_98(int *n)
 {
-int value;
+int ten;
+int cent;
 *n = 98;
-_putchar(value / 10 + '0');
-_putchar(value % 10 + '0');
+ten = *n / 10;
+cent = *n % 10;
+_putchar(ten + '0');
+_putchar(cent + '0');
 
 }
