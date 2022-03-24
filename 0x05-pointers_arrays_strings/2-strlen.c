@@ -8,7 +8,15 @@
 int _strlen(char *s)
 {
 
-int lngth = _strlen(*s);
-return (lngth);
+int cpt;
+int i;
+char value[] = *s;
+i = 0;
+
+while (value[i] !=  '\0')
+{
+cpt++;
+}
+return (cpt);
 
 }
