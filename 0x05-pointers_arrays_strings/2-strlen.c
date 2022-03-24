@@ -9,13 +9,13 @@ int _strlen(char *s)
 {
 
 int cpt;
-int i;
-char value[] = s;
-i = 0;
+int i = 0;
+char value = s[0];
 
-while (value[i] !=  '\0')
+while (value !=  '\0')
 {
 cpt++;
+value = s[++i];
 }
 return (cpt);
 
