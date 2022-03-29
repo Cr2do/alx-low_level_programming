@@ -6,23 +6,23 @@
  */
 void rev_string(char *s)
 {
-char new[500];
-int count, newcount;
+char myChar[500];
+int firstCount, secondCount;
 
-count = 0, newcount = 0;
+firstCount = 0, secondCount = 0;
 
-while (*(s + count) != '\0')
+while (*(s + firstCount) != '\0')
 {
-new[count] = *(s + count);
-count++;
+myChar[firstCount] = *(s + firstCount);
+firstCount++;
 }
 
-count--;
+firstCount--;
 
-while (count >= 0)
+while (firstCount >= 0)
 {
-*(s + newcount) = new[count];
-count--;
-newcount++;
+*(s + secondCount) = myChar[firstCount];
+firstCount--;
+secondCount++;
 }
 }
