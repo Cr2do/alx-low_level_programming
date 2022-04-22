@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+
+/**
+ * main - Use of command printf
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;
