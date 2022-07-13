@@ -1,17 +1,19 @@
 #include "hash_tables.h"
 
 /**
- * Create a hash table 
- * 
- * @size: Unsigned long int parameter 
+ * hash_table_create - Create a hash table
+ *
+ * @size: Unsigned long int parameter
+ * Return: @hash_table_t
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
-    hash_table_t *hash_t;
+
+	hash_table_t *hash_t;
 
 	if (size == 0)
 		return (NULL);
-	
+
 	hash_t = malloc(sizeof(hash_table_t));
 
 	if (!hash_t)
